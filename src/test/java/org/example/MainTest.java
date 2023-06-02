@@ -13,5 +13,14 @@ class MainTest {
 
         assertTrue(actual);
     }
-
+    @Test
+    void yieldFalse_whenCalledWithabc(){
+        boolean actual=Main.validateWithNumber("abc");
+        assertFalse(actual);
+    }
+    @Test
+    void yieldTrue_whenCalledWithabc1(){
+        boolean actual=Main.validateWithNumber("abc1");
+        assertTrue(actual);
+    }
 }
