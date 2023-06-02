@@ -23,4 +23,15 @@ class MainTest {
         boolean actual=Main.validateWithNumber("abc1");
         assertTrue(actual);
     }
+    @Test
+    void yieldTrue_whenCalledWithabC(){
+        boolean actual=Main.validateWithSmallAndBig("abC");
+        assertTrue(actual);
+    }
+    @Test
+    void yieldTrue_whenCalledWithabc() {
+        boolean actual = Main.validateWithSmallAndBig("abc");
+        assertFalse(actual);
+    }
+
 }
