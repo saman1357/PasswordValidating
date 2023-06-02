@@ -33,5 +33,15 @@ class MainTest {
         boolean actual = Main.validateWithSmallAndBig("abc");
         assertFalse(actual);
     }
+    @Test
+    void yieldFalse_whenCalledWithpasswort() {
+        boolean actual = Main.validateGoodPassword("passwort");
+        assertFalse(actual);
+    }
+    @Test
+    void yieldTrue_whenCalledWithp4$$w0Rd() {
+        boolean actual = Main.validateGoodPassword("p4$$w0Rd");
+        assertTrue(actual);
+    }
 
 }

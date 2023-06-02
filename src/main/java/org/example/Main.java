@@ -37,4 +37,23 @@ public class Main {
         }
         return false;
     }
+    public static boolean validateGoodPassword(String password) {
+        String[] badPasswords = {
+                "123456789",
+                "Password",
+                "12345678",
+                "Qwerty123",
+                "1234567890",
+                "DEFAULT",
+                "Qwertyuiop",
+                "Iloveyou",
+                "passwort"
+        };
+        for (String badPassword : badPasswords) {
+            if (password.equalsIgnoreCase(badPassword)) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
