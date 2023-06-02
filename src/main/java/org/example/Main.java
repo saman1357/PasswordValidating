@@ -4,10 +4,16 @@ import java.util.Scanner;
 
 public class Main {
 
-    Scanner scanner = new Scanner(System.in);
-
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        System.out.println("Hello user!");
+        System.out.println("Please enter your desired password ;)");
+        userInputWithScanner();
+    }
+
+    public static void userInputWithScanner() {
+        Scanner scanner = new Scanner(System.in);
+        String password = scanner.nextLine();
+        System.out.println(password);
     }
 
     public static boolean validateLength(String password) {
