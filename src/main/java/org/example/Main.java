@@ -21,4 +21,20 @@ public class Main {
         }
         return false;
     }
+    public static boolean validateWithSmallAndBig(String password) {
+        int smallCharCounter = 0;
+        int bigCharCounter = 0;
+        for (int i = 0; i < password.length(); i++) {
+            if (Character.isLowerCase(password.charAt(i))) {
+                smallCharCounter++;
+            }
+            if (Character.isUpperCase(password.charAt(i))) {
+                bigCharCounter++;
+            }
+        }
+        if (smallCharCounter > 0 && bigCharCounter > 0) {
+            return true;
+        }
+        return false;
+    }
 }
