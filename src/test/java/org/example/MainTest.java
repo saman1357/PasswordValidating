@@ -9,7 +9,7 @@ class MainTest {
     @Test
     void yieldTrue_whenCalledWith12345678() {
 
-        boolean actual = Main.validateLength();
+        boolean actual = Main.validateLength("12345678");
 
         assertTrue(actual);
     }
