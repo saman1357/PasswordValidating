@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello user!");
+        System.out.println("Hello dear user!");
         System.out.println("Please enter your desired password ;)");
 
         System.out.println(userInputWithScanner());
