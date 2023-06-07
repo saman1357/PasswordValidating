@@ -36,7 +36,7 @@ class MainTest {
     @Test
     void yieldFalse_whenCalledWithpasswort() {
         boolean actual = Main.validateGoodPassword("passwort");
-        assertTrue(actual);
+        assertFalse(actual);
     }
     @Test
     void yieldTrue_whenCalledWithp4$$w0Rd() {
